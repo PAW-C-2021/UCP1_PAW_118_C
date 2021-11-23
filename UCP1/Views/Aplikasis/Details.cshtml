@@ -1,0 +1,36 @@
+﻿@model UCP1.Models.Aplikasi
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Aplikasi</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AdventureGenre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AdventureGenre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ActionGenre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ActionGenre)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FantasyGenre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FantasyGenre)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdAplikasi">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
